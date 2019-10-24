@@ -439,6 +439,81 @@
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
+<package name="M2-STANDOFF">
+<hole x="0" y="0" drill="2.6"/>
+<polygon width="0.127" layer="1">
+<vertex x="0.1" y="-2.5" curve="90"/>
+<vertex x="2.5" y="-0.1"/>
+<vertex x="1.5" y="-0.1" curve="-90"/>
+<vertex x="0.1" y="-1.5"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="2.5" y="0.1" curve="90"/>
+<vertex x="0.1" y="2.5"/>
+<vertex x="0.1" y="1.5" curve="-90"/>
+<vertex x="1.5" y="0.1"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-0.1" y="2.5" curve="90"/>
+<vertex x="-2.5" y="0.1"/>
+<vertex x="-1.5" y="0.1" curve="-90"/>
+<vertex x="-0.1" y="1.5"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-2.5" y="-0.1" curve="90"/>
+<vertex x="-0.1" y="-2.5"/>
+<vertex x="-0.1" y="-1.5" curve="-90"/>
+<vertex x="-1.5" y="-0.1"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-2.5" y="-0.1" curve="90"/>
+<vertex x="-0.1" y="-2.5"/>
+<vertex x="-0.1" y="-1.5" curve="-90"/>
+<vertex x="-1.5" y="-0.1"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-2.5" y="-0.1" curve="90"/>
+<vertex x="-0.1" y="-2.5"/>
+<vertex x="-0.1" y="-1.5" curve="-90"/>
+<vertex x="-1.5" y="-0.1"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="0.1" y="-2.5" curve="90"/>
+<vertex x="2.5" y="-0.1"/>
+<vertex x="1.5" y="-0.1" curve="-90"/>
+<vertex x="0.1" y="-1.5"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="2.5" y="0.1" curve="90"/>
+<vertex x="0.1" y="2.5"/>
+<vertex x="0.1" y="1.5" curve="-90"/>
+<vertex x="1.5" y="0.1"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-0.1" y="2.5" curve="90"/>
+<vertex x="-2.5" y="0.1"/>
+<vertex x="-1.5" y="0.1" curve="-90"/>
+<vertex x="-0.1" y="1.5"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="0.1" y="-2.5" curve="90"/>
+<vertex x="2.5" y="-0.1"/>
+<vertex x="1.5" y="-0.1" curve="-90"/>
+<vertex x="0.1" y="-1.5"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="2.5" y="0.1" curve="90"/>
+<vertex x="0.1" y="2.5"/>
+<vertex x="0.1" y="1.5" curve="-90"/>
+<vertex x="1.5" y="0.1"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-0.1" y="2.5" curve="90"/>
+<vertex x="-2.5" y="0.1"/>
+<vertex x="-1.5" y="0.1" curve="-90"/>
+<vertex x="-0.1" y="1.5"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -720,6 +795,9 @@
 <text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 <pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="M2-STANDOFF">
+<text x="-5.08" y="-2.54" size="1.27" layer="97">M.2 STANDOFF</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1152,6 +1230,19 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/2199230
 </device>
 </devices>
 </deviceset>
+<deviceset name="M2-STANDOFF">
+<description>https://www.digikey.com/product-detail/en/jae-electronics/SM3ZS067U310-NUT1-R1800/670-2864-1-ND/5955848</description>
+<gates>
+<gate name="G$1" symbol="M2-STANDOFF" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="M2-STANDOFF">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1197,6 +1288,7 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/2199230
 <part name="JP1" library="rickk2" deviceset="M02" device="PTH"/>
 <part name="SUPPLY5" library="rickk2" deviceset="3V7" device=""/>
 <part name="SUPPLY6" library="rickk2" deviceset="3V3" device=""/>
+<part name="U$1" library="rickk2" deviceset="M2-STANDOFF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1317,6 +1409,7 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/2199230
 <instance part="SUPPLY6" gate="G$1" x="55.88" y="193.04" smashed="yes">
 <attribute name="VALUE" x="54.864" y="196.596" size="1.778" layer="96"/>
 </instance>
+<instance part="U$1" gate="G$1" x="78.74" y="99.06" smashed="yes"/>
 </instances>
 <busses>
 </busses>
