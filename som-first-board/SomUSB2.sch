@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -991,27 +991,6 @@ https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-3E
 </device>
 </devices>
 </deviceset>
-<deviceset name="RES-158K-0603" prefix="R" uservalue="yes">
-<description>Panasonic Electronic Components ERJ-3EKF1583V&lt;br&gt;
-158 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film&lt;br&gt;
-https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-3EKF1583V/P158KHCT-ND/198182</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603-RES">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="VALUE" value="158K" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="5V" prefix="SUPPLY">
 <description>5V supply symbol</description>
 <gates>
@@ -1029,19 +1008,6 @@ https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-3E
 <description>3.3V supply symbol</description>
 <gates>
 <gate name="G$1" symbol="3V3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="3V7" prefix="SUPPLY">
-<description>3.7V supply symbol</description>
-<gates>
-<gate name="G$1" symbol="3V7" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1243,6 +1209,41 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/2199230
 </device>
 </devices>
 </deviceset>
+<deviceset name="RES-150K-0603" prefix="R" uservalue="yes">
+<description>RES SMD 150K OHM 1% 1/10W 0603 &lt;br&gt;
+Panasonic Electronic Components ERJ-3EKF1503V&lt;br&gt;
+150 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film&lt;br&gt;
+https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-3EKF1503V/P150KHCT-ND/198178</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="150K" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3V8" prefix="SUPPLY">
+<description>3.8V supply symbol</description>
+<gates>
+<gate name="G$1" symbol="3V7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1272,23 +1273,23 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/2199230
 <part name="R5" library="rickk2" deviceset="RES-806K-0603" device="" value="806K"/>
 <part name="R6" library="rickk2" deviceset="RES-182K-0603" device="" value="182K"/>
 <part name="R7" library="rickk2" deviceset="RES-806K-0603" device="" value="806K"/>
-<part name="R8" library="rickk2" deviceset="RES-158K-0603" device="" value="158K"/>
 <part name="SUPPLY4" library="rickk2" deviceset="5V" device=""/>
 <part name="GND4" library="rickk2" deviceset="GND" device=""/>
 <part name="U$3" library="rickk2" deviceset="USB-MICRO-B-SOCKET-AMPHENOL" device=""/>
 <part name="SUPPLY1" library="rickk2" deviceset="3V3" device=""/>
 <part name="SUPPLY2" library="rickk2" deviceset="3V3" device=""/>
 <part name="SUPPLY3" library="rickk2" deviceset="3V3" device=""/>
-<part name="SUPPLY7" library="rickk2" deviceset="3V7" device=""/>
 <part name="S1" library="rickk2" deviceset="SWITCH-MOM-4.5" device=""/>
 <part name="S2" library="rickk2" deviceset="SWITCH-MOM-4.5" device=""/>
 <part name="J1" library="rickk2" deviceset="SPARK_M.2EKEY" device="" value=""/>
 <part name="SJ1" library="rickk2" deviceset="JUMPER-PTH-2-NO" device=""/>
 <part name="SJ2" library="rickk2" deviceset="JUMPER-PTH-2-NO" device=""/>
 <part name="JP1" library="rickk2" deviceset="M02" device="PTH"/>
-<part name="SUPPLY5" library="rickk2" deviceset="3V7" device=""/>
 <part name="SUPPLY6" library="rickk2" deviceset="3V3" device=""/>
 <part name="U$1" library="rickk2" deviceset="M2-STANDOFF" device=""/>
+<part name="R8" library="rickk2" deviceset="RES-150K-0603" device="" value="150K"/>
+<part name="SUPPLY8" library="rickk2" deviceset="3V8" device=""/>
+<part name="SUPPLY5" library="rickk2" deviceset="3V8" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1359,10 +1360,6 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/2199230
 <attribute name="NAME" x="143.2814" y="156.21" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="148.082" y="156.21" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R8" gate="G$1" x="144.78" y="144.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="143.2814" y="140.97" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="148.082" y="140.97" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="SUPPLY4" gate="G$1" x="43.18" y="193.04" smashed="yes">
 <attribute name="VALUE" x="42.164" y="196.596" size="1.778" layer="96"/>
 </instance>
@@ -1378,9 +1375,6 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/2199230
 </instance>
 <instance part="SUPPLY3" gate="G$1" x="127" y="81.28" smashed="yes">
 <attribute name="VALUE" x="125.984" y="84.836" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY7" gate="G$1" x="127" y="91.44" smashed="yes">
-<attribute name="VALUE" x="125.984" y="94.996" size="1.778" layer="96"/>
 </instance>
 <instance part="S1" gate="G$1" x="142.24" y="45.72" smashed="yes">
 <attribute name="NAME" x="137.16" y="53.34" size="1.778" layer="94"/>
@@ -1403,13 +1397,20 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/2199230
 <instance part="JP1" gate="G$1" x="25.4" y="167.64" smashed="yes">
 <attribute name="NAME" x="22.86" y="173.482" size="1.778" layer="95"/>
 </instance>
-<instance part="SUPPLY5" gate="G$1" x="154.94" y="193.04" smashed="yes">
-<attribute name="VALUE" x="153.924" y="196.596" size="1.778" layer="96"/>
-</instance>
 <instance part="SUPPLY6" gate="G$1" x="55.88" y="193.04" smashed="yes">
 <attribute name="VALUE" x="54.864" y="196.596" size="1.778" layer="96"/>
 </instance>
 <instance part="U$1" gate="G$1" x="78.74" y="99.06" smashed="yes"/>
+<instance part="R8" gate="G$1" x="144.78" y="144.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="143.2814" y="140.97" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="148.082" y="140.97" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY8" gate="G$1" x="154.94" y="193.04" smashed="yes">
+<attribute name="VALUE" x="153.924" y="196.596" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY5" gate="G$1" x="127" y="91.44" smashed="yes">
+<attribute name="VALUE" x="125.984" y="94.996" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1502,7 +1503,6 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/2199230
 <wire x1="119.38" y1="165.1" x2="121.92" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="165.1" x2="121.92" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="137.16" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="137.16" x2="144.78" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="137.16" x2="68.58" y2="137.16" width="0.1524" layer="91"/>
 <junction x="121.92" y="137.16"/>
@@ -1527,6 +1527,7 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/2199230
 <wire x1="35.56" y1="167.64" x2="35.56" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="152.4" x2="43.18" y2="152.4" width="0.1524" layer="91"/>
 <junction x="43.18" y="152.4"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="/MODE" class="0">
@@ -1670,39 +1671,12 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/2199230
 <wire x1="119.38" y1="172.72" x2="149.86" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="172.72" x2="149.86" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="152.4" x2="144.78" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="152.4" x2="144.78" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="152.4" x2="144.78" y2="154.94" width="0.1524" layer="91"/>
 <junction x="144.78" y="152.4"/>
 <label x="116.84" y="172.72" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="3V7" class="0">
-<segment>
-<wire x1="119.38" y1="81.28" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="83.82" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="86.36" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
-<junction x="119.38" y="86.36"/>
-<wire x1="114.3" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
-<junction x="119.38" y="83.82"/>
-<wire x1="114.3" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="88.9" x2="127" y2="88.9" width="0.1524" layer="91"/>
-<junction x="119.38" y="88.9"/>
-<pinref part="SUPPLY7" gate="G$1" pin="3V7"/>
-<wire x1="127" y1="88.9" x2="127" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="VCC-2"/>
-<pinref part="J1" gate="G$1" pin="VCC-4"/>
-<pinref part="J1" gate="G$1" pin="VCC-6"/>
-<pinref part="J1" gate="G$1" pin="VCC-8"/>
-</segment>
-<segment>
-<pinref part="SJ2" gate="G$1" pin="2"/>
-<wire x1="152.4" y1="190.5" x2="154.94" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="190.5" x2="154.94" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="SUPPLY5" gate="G$1" pin="3V7"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="VUSB" class="0">
@@ -1760,7 +1734,7 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/2199230
 <wire x1="55.88" y1="187.96" x2="53.34" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="3V7-REG" class="0">
+<net name="3V8-REG" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="165.1" x2="144.78" y2="167.64" width="0.1524" layer="91"/>
@@ -1774,6 +1748,33 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/2199230
 <junction x="154.94" y="167.64"/>
 <pinref part="SJ2" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="187.96" x2="152.4" y2="187.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="3V8" class="0">
+<segment>
+<pinref part="SJ2" gate="G$1" pin="2"/>
+<wire x1="152.4" y1="190.5" x2="154.94" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="190.5" x2="154.94" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="SUPPLY8" gate="G$1" pin="3V7"/>
+</segment>
+<segment>
+<wire x1="119.38" y1="81.28" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="83.82" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="86.36" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
+<junction x="119.38" y="86.36"/>
+<wire x1="114.3" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
+<junction x="119.38" y="83.82"/>
+<wire x1="114.3" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="88.9" x2="127" y2="88.9" width="0.1524" layer="91"/>
+<junction x="119.38" y="88.9"/>
+<wire x1="127" y1="88.9" x2="127" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="VCC-2"/>
+<pinref part="J1" gate="G$1" pin="VCC-4"/>
+<pinref part="J1" gate="G$1" pin="VCC-6"/>
+<pinref part="J1" gate="G$1" pin="VCC-8"/>
+<pinref part="SUPPLY5" gate="G$1" pin="3V7"/>
 </segment>
 </net>
 </nets>
