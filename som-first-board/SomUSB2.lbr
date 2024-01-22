@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10,6 +10,18 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
@@ -173,7 +185,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>Generated from &lt;b&gt;SomUSB1.sch&lt;/b&gt;&lt;p&gt;
+<description>Generated from &lt;b&gt;SomUSB2.sch&lt;/b&gt;&lt;p&gt;
 by exp-lbrs.ulp</description>
 <packages>
 <package name="1X02">
@@ -698,8 +710,8 @@ by exp-lbrs.ulp</description>
 <pin name="AGND-39" x="-35.56" y="2.54" length="middle"/>
 <pin name="AGND-49" x="-35.56" y="-10.16" length="middle"/>
 <pin name="CS" x="35.56" y="-7.62" length="middle" rot="R180"/>
-<pin name="D2" x="35.56" y="2.54" length="middle" rot="R180"/>
-<pin name="D3" x="35.56" y="0" length="middle" rot="R180"/>
+<pin name="D2" x="35.56" y="0" length="middle" rot="R180"/>
+<pin name="D3" x="35.56" y="2.54" length="middle" rot="R180"/>
 <pin name="D4" x="35.56" y="-30.48" length="middle" rot="R180"/>
 <pin name="D5" x="35.56" y="-33.02" length="middle" rot="R180"/>
 <pin name="D6" x="35.56" y="-35.56" length="middle" rot="R180"/>
@@ -814,8 +826,8 @@ by exp-lbrs.ulp</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="3V7" prefix="SUPPLY">
-<description>3.7V supply symbol</description>
+<deviceset name="3V8" prefix="SUPPLY">
+<description>3.8V supply symbol</description>
 <gates>
 <gate name="G$1" symbol="3V7" x="0" y="0"/>
 </gates>
@@ -1047,10 +1059,11 @@ https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-PA
 </device>
 </devices>
 </deviceset>
-<deviceset name="RES-158K-0603" prefix="R" uservalue="yes">
-<description>Panasonic Electronic Components ERJ-3EKF1583V&lt;br&gt;
-158 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film&lt;br&gt;
-https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-3EKF1583V/P158KHCT-ND/198182</description>
+<deviceset name="RES-150K-0603" prefix="R" uservalue="yes">
+<description>RES SMD 150K OHM 1% 1/10W 0603 &lt;br&gt;
+Panasonic Electronic Components ERJ-3EKF1503V&lt;br&gt;
+150 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film&lt;br&gt;
+https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-3EKF1503V/P150KHCT-ND/198178</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
@@ -1062,7 +1075,7 @@ https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-3E
 </connects>
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="158K" constant="no"/>
+<attribute name="VALUE" value="150K" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1134,8 +1147,8 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/2199230
 <connect gate="G$1" pin="AGND-39" pad="39"/>
 <connect gate="G$1" pin="AGND-49" pad="49"/>
 <connect gate="G$1" pin="CS" pad="48"/>
-<connect gate="G$1" pin="D2" pad="40"/>
-<connect gate="G$1" pin="D3" pad="42"/>
+<connect gate="G$1" pin="D2" pad="42"/>
+<connect gate="G$1" pin="D3" pad="40"/>
 <connect gate="G$1" pin="D4" pad="66"/>
 <connect gate="G$1" pin="D5" pad="68"/>
 <connect gate="G$1" pin="D6" pad="70"/>
